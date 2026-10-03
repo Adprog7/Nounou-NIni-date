@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import "./App.css";
 
-const API = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");const DAYS = ["L", "M", "M", "J", "V", "S", "D"];
+const API = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
+const DAYS = ["L", "M", "M", "J", "V", "S", "D"];
 // 32 = 1er novembre. Les lettres regroupent les week-ends.
 const OK = { 10: "a", 11: "a", 17: "b", 18: "b", 31: "c", 32: "c" };
 const NAMES = {
